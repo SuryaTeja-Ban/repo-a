@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "repo_a"
+version = "0.1.0"
+description = "A project that uses Repo B as a dependency"
+authors = ["Your Name <your-email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+repo_b = { git = "https://github.com/your-username/repo-b.git", branch = "main" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
